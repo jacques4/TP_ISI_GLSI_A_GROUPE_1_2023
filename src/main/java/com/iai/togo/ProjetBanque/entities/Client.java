@@ -1,12 +1,12 @@
 package com.iai.togo.ProjetBanque.entities;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import com.iai.togo.ProjetBanque.enums.Sexe;
 @Entity
 @Table(name="Clients")
 @Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Client {

@@ -1,9 +1,11 @@
 package com.iai.togo.ProjetBanque.entities;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import com.iai.togo.ProjetBanque.enums.TypeCompte;
+
 import java.time.LocalDate;
 @Entity
 @Table(name="Comptes")
@@ -26,4 +28,15 @@ public class Compte {
     @ManyToOne
     @JoinColumn(name="IdClient")
     private Client proprietaire;
+
+    public String genereNumCompte(){
+        String numCompte = "";
+        String caracteres="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        for(int i=0; i<5; i++){
+            int index = (int) (Math.random()*caracteres.length());
+            numCompte += caracteres.charAt(index);
+        }
+        numCompte += (LocalDate.now().getYear());
+        return numCompte;
+    }
 }
