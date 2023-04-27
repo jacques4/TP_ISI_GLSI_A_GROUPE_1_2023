@@ -2,16 +2,16 @@
 
 Il s'agit d'un projet de gestion d'une banque en quelque sorte . 
 
-La base de donnee utilise est H2 .
-le lien d'acces aux routes est celci :
+La base de donnee utilisé est H2 .
+Le lien d'acces aux routes est celci :
  
  http://localhost:8080/egapirest
 
 L'API permet donc de: 
-Creee un client .
-Creer un compte a ce dernier avec un montant par defaut 00 fr.
-Faire un versement sur le comte de ce dernier.
-Faire un retrait sur le compte de ce dernier.
+Créer un client ,
+Créer un compte a ce dernier avec un montant par defaut 00 fr,
+Faire un versement sur le compte de ce dernier ,
+Faire un retrait sur le compte de ce dernier,
 Faire un virement de son compte vers un autre compte.
 
 
