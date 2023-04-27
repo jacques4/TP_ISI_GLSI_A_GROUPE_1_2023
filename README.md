@@ -17,7 +17,7 @@ Faire un virement de son compte vers un autre compte.
 
 Liens d'acces aux routes
 
-*OPERATIONS PORTANT SUR LE CLIENT CLIENTS
+*OPERATIONS PORTANT SUR LE CLIENT
 
 Listes des clients(GET)         http://localhost:8080/egapirest/clients
 Client particulier(GET)         http://localhost:8080/egapirest/client/id
